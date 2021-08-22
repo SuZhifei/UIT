@@ -1,0 +1,17 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 7897345..d822565 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -59,11 +59,7 @@ set(INSTALL_LIB_DIR lib CACHE PATH "Installation directory for libraries")
+ set(INSTALL_BIN_DIR bin CACHE PATH "Installation directory for binaries")
+ set(INSTALL_INCLUDE_DIR include/CommonAPI-${COMMONAPI_API_HEADER_VERSION} CACHE PATH "Installation directory for header files")
+ 
+-if(WIN32 AND NOT CYGWIN)
+-  set(DEF_INSTALL_CMAKE_DIR cmake)
+-else()
+-  set(DEF_INSTALL_CMAKE_DIR lib/cmake/CommonAPI-${COMPONENT_VERSION})
+-endif()
++set(DEF_INSTALL_CMAKE_DIR lib/cmake/CommonAPI-${COMPONENT_VERSION})
+ set(INSTALL_CMAKE_DIR ${DEF_INSTALL_CMAKE_DIR} CACHE PATH "Installation directory for CMake files")
+ 
+ OPTION(USE_FILE "Set to OFF to disable file logging" OFF )

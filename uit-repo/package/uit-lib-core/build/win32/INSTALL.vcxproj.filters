@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\share\UIT\uit-repo\package\uit-lib-core\build\win32\CMakeFiles\01954280eecd16a494227005100dcd2e\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BF6CCCA9-7813-3737-8354-B47FA207E894}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

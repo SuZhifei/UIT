@@ -1,0 +1,66 @@
+import "platform:/plugin/org.genivi.commonapi.someip/deployment/CommonAPI-SOMEIP_deployment_spec.fdepl"
+import "ScreenfwTypes.fdepl"
+import "Listener.fidl"
+
+define org.genivi.commonapi.someip.deployment for interface uit.screenfw.Listener {
+	SomeIpServiceID = 70000
+
+    method SayHello {
+        SomeIpMethodID = 1
+		SomeIpReliable = true
+    }
+	
+	broadcast NotifyVisibility {
+		SomeIpEventID = 53001
+		SomeIpEventGroups = { 1 }
+	}
+
+	broadcast NotifyPosition {
+		SomeIpEventID = 53002
+		SomeIpEventGroups = { 2 }
+	}
+
+	broadcast NotifyClipPosition {
+		SomeIpEventID = 53003
+		SomeIpEventGroups = { 3 }
+	}
+	
+	broadcast NotifySize {
+		SomeIpEventID = 53004
+		SomeIpEventGroups = { 4 }
+	}
+
+	broadcast NotifyClipSize {
+		SomeIpEventID = 53005
+		SomeIpEventGroups = { 5 }
+	}
+	
+	broadcast NotifyRect {
+		SomeIpEventID = 53006
+		SomeIpEventGroups = { 6 }
+	}
+
+	broadcast NotifyClipRect {
+		SomeIpEventID = 53007
+		SomeIpEventGroups = { 7 }
+	}
+	
+	broadcast NotifyFullScreen {
+		SomeIpEventID = 53008
+		SomeIpEventGroups = { 8 }
+	}
+	
+	broadcast Notifyscreenshot {
+		SomeIpEventID = 53009
+		SomeIpEventGroups = { 9 }
+	}
+
+}
+
+define org.genivi.commonapi.someip.deployment for provider Service {
+    instance uit.screenfw.Listener {
+        InstanceId = "uit.screenfw.listener"
+
+        SomeIpInstanceID = 71000
+    }
+}

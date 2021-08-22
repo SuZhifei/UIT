@@ -1,0 +1,11 @@
+prefix=/work/uit/uit-repo/package/uit-3rdparty/dist/linux-x11/release
+exec_prefix=/work/uit/uit-repo/package/uit-3rdparty/dist/linux-x11/release
+libdir=/work/uit/uit-repo/package/uit-3rdparty/dist/linux-x11/release/lib
+includedir=/work/uit/uit-repo/package/uit-3rdparty/dist/linux-x11/release/include
+
+Name: 
+Description: GENIVI Common API C++ Library
+Version: 3.1.12
+Libs: -L${libdir} -lCommonAPI
+Cflags: -I${includedir}/CommonAPI-3.1
+

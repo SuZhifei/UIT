@@ -1,0 +1,39 @@
+{
+	"BodyControl" :
+	{
+		"SeatConfigItemTemplate" :
+		{
+			"Name" : "",
+			"Add" : ["Global.ValidEnum", 0]
+		}
+	},
+	"TextWarning" :
+	{
+		"TextWarningItemTemplate" :
+		{
+			"Index" : 0
+		}
+	},
+	"Music" :
+	{
+		"MediaItemTemplate" : 
+		{
+			"FileName" : "",
+			"Artist" : "",
+			"Picture" : ["Image"],
+			"IsChecked" : false,
+			"CurrState" : ["Media.CurrStateEnum", 0]
+		}
+	},
+	"Bt" :
+	{
+		"CallRecordItemTemplate" :
+		{
+			"NumberOrName"		: "",
+			"HappendTime"		: "",
+			"Address"			: "",
+			"Duration"			: 0,
+			"CallRecordType"	: ["Bt.CallRecordEnum", 0]
+		}
+	}
+}

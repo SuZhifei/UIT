@@ -1,0 +1,26 @@
+package uit.screenfw
+
+typeCollection Types {
+    version {
+        major 1
+        minor 0
+    }
+	
+	struct Position{
+		UInt32   x
+		UInt32   y
+	}
+	
+	struct Size{
+		UInt32   width
+		UInt32   height
+	}
+	
+	struct Rect{
+		UInt32   x
+		UInt32   y
+		UInt32   width
+		UInt32   height
+	}
+	
+}

@@ -1,0 +1,89 @@
+import "platform:/plugin/org.genivi.commonapi.someip/deployment/CommonAPI-SOMEIP_deployment_spec.fdepl"
+import "DatafwTypes.fdepl"
+import "ControllerServer.fidl"
+
+define org.genivi.commonapi.someip.deployment for interface uit.datafw.ControllerServer {
+	SomeIpServiceID = 10000     /* 0x3000 */
+
+    method RegisterEvents {
+        SomeIpMethodID = 1
+    }
+	
+    method SetBoolean {
+        SomeIpMethodID = 2
+    }
+
+    method SetInteger {
+        SomeIpMethodID = 3
+    }
+
+    method SetReal {
+        SomeIpMethodID = 4
+    }
+
+    method SetString {
+        SomeIpMethodID = 5
+    }
+
+    method SetEnum {
+        SomeIpMethodID = 6
+    }
+
+    method SetEnumStringValue {
+        SomeIpMethodID = 7
+    }
+
+    method SetImage {
+        SomeIpMethodID = 8
+    }
+
+    method SetGroup {
+        SomeIpMethodID = 9
+    }
+	
+    method ResizeList {
+        SomeIpMethodID = 10
+    }
+
+    method InsertListItems {
+        SomeIpMethodID = 11
+    }
+
+    method RemoveListItems {
+        SomeIpMethodID = 12
+    }
+
+    method SetListViewport {
+        SomeIpMethodID = 13
+    }
+
+    method UpdateListItems {
+        SomeIpMethodID = 14
+    }
+
+    method CheckListItem {
+        SomeIpMethodID = 15
+    }
+
+    method FocusListItem {
+        SomeIpMethodID = 16
+    }
+
+    method VKey {
+        SomeIpMethodID = 17
+    }
+
+    broadcast UserAction {
+        SomeIpEventID = 32769
+        SomeIpEventGroups = { 1 }
+    }
+
+}
+
+define org.genivi.commonapi.someip.deployment for provider Service {
+    instance uit.datafw.ControllerServer {
+        InstanceId = "uit.datafw.controller"
+
+        SomeIpInstanceID = 20000      /* 0x4000 */
+    }
+}

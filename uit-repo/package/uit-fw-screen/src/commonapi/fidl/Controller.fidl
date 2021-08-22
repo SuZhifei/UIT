@@ -1,0 +1,115 @@
+package uit.screenfw
+
+import uit.screenfw.Types.* from "ScreenfwTypes.fidl"
+
+interface Controller {
+    version {
+        major 1
+        minor 0
+    }
+	
+	method SetVisibility {
+        in {
+			UInt32  	windowID
+            Boolean 	bShow
+        }
+		out {
+			Boolean 	result
+		}
+    }
+
+	method SetPosition {
+        in {
+			UInt32  	windowID
+            UInt32   	x
+			UInt32  	y
+			UInt32  	screenID
+        }
+		out {
+			Boolean 	result
+		}
+    }
+
+	method SetClipPosition {
+        in {
+			UInt32  	windowID
+            UInt32   	x
+			UInt32  	y
+			UInt32  	screenID
+        }
+		out {
+			Boolean 	result
+		}
+    }
+
+	method SetSize {
+        in {
+			UInt32  	windowID
+            UInt32   	width
+			UInt32  	height
+        }
+		out {
+			Boolean 	result
+		}
+    }
+
+	method SetClipSize {
+        in {
+			UInt32  	windowID
+            UInt32   	width
+			UInt32  	height
+        }
+		out {
+			Boolean 	result
+		}
+    }
+
+	method SetRect {
+        in {
+			UInt32  	windowID
+			UInt32   	x
+			UInt32  	y
+            UInt32   	width
+			UInt32  	height
+			UInt32  	screenID
+        }
+		out {
+			Boolean 	result
+		}
+    }
+
+	method SetClipRect {
+        in {
+			UInt32  	windowID
+			UInt32   	x
+			UInt32  	y
+            UInt32   	width
+			UInt32  	height
+			UInt32  	screenID
+        }
+		out {
+			Boolean 	result
+		}
+    }
+
+	method SetFullScreen {
+        in {
+			UInt32  	windowID
+			Boolean 	bFull
+			UInt32  	screenID
+        }
+		out {
+			Boolean 	result
+		}
+	}
+
+	method Screenshot {
+        in {
+			String		filePath
+			UInt32  	screenID
+        }
+		out {
+			Boolean 	result
+		}
+	}
+}

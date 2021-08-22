@@ -1,0 +1,12 @@
+.manager
+framework.info.*
+.fileTable.*
+.fileTableLock
+.contributions.*
+.contributors.*
+.extraData.*
+.mainData.*
+.namespaces.*
+.orphans.*
+.table.*
+*.tmp

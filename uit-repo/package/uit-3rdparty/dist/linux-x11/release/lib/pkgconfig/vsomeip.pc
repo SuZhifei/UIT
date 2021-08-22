@@ -1,0 +1,11 @@
+prefix=/work/uit/uit-repo/package/uit-3rdparty/dist/linux-x11/release
+exec_prefix=/work/uit/uit-repo/package/uit-3rdparty/dist/linux-x11/release
+libdir=/work/uit/uit-repo/package/uit-3rdparty/dist/linux-x11/release/lib
+includedir=/work/uit/uit-repo/package/uit-3rdparty/dist/linux-x11/release/include
+
+Name: 
+Description: New SOME/IP stack, feature complete
+Version: 2.10.21
+Libs: -L${libdir} -lvsomeip -lvsomeip-sd -lboost_system -lboost_log -lboost_filesystem
+Cflags: -I${includedir}
+

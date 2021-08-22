@@ -1,0 +1,87 @@
+package uit.screenfw
+
+import uit.screenfw.Types.* from "ScreenfwTypes.fidl"
+
+interface Listener {
+    version {
+        major 1
+        minor 0
+    }
+	
+	method SayHello {
+		in {
+			Int32 pid
+			UInt32  	windowID
+		}
+	}
+	
+	broadcast NotifyVisibility selective {
+        out {
+            Boolean 	bShow
+        }
+    }
+	
+	broadcast NotifyPosition selective {
+        out {
+            UInt32   	x
+			UInt32  	y
+			UInt32  	screenID
+        }
+    }
+
+    broadcast NotifyClipPosition selective {
+        out {
+            UInt32   	x
+			UInt32  	y
+			UInt32  	screenID
+        }
+    }
+
+	broadcast NotifySize selective {
+        out {
+            UInt32   	width
+			UInt32  	height
+        }
+    }
+
+    broadcast NotifyClipSize selective {
+        out {
+            UInt32   	width
+			UInt32  	height
+        }
+    }
+	
+	broadcast NotifyRect selective {
+        out {
+			UInt32   	x
+			UInt32  	y
+            UInt32   	width
+			UInt32  	height
+			UInt32  	screenID
+        }
+    }
+
+    broadcast NotifyClipRect selective {
+        out {
+			UInt32   	x
+			UInt32  	y
+            UInt32   	width
+			UInt32  	height
+			UInt32  	screenID
+        }
+    }
+	
+	broadcast NotifyFullScreen selective {
+        out {
+			Boolean 	bFull
+			UInt32  	screenID
+        }
+    }
+	
+	broadcast Notifyscreenshot selective {
+        out {
+			String		filePath
+			UInt32  	screenID
+        }
+    }
+}

@@ -1,0 +1,23 @@
+package uit.datafw
+
+typeCollection Types {
+    version {
+        major 1
+        minor 0
+    }
+
+	struct Image{
+		String		path
+		Boolean		formatknown
+		Int32		format
+		UInt32		width
+		UInt32		height
+		ByteBuffer	buffer
+	}
+
+	struct ListAttachment{
+		String		listpath
+		Image[]		images
+	}
+	
+}

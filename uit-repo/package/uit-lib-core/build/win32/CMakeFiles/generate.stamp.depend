@@ -1,0 +1,23 @@
+# CMake generation dependency list for this directory.
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/CMakeCInformation.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/CMakeCXXInformation.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/CMakeGenericSystem.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/CMakeRCInformation.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/Compiler/MSVC-C.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/Compiler/MSVC-CXX.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/Platform/Windows-MSVC-C.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/Platform/Windows-MSVC-CXX.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/Platform/Windows-MSVC.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/Platform/Windows.cmake
+D:/Program Files/cmake-3.16.0-rc4-win64-x64/share/cmake-3.16/Modules/Platform/WindowsPaths.cmake
+D:/share/UIT/uit-repo/package/uit-lib-core/CMakeLists.txt
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/CMakeFiles/3.16.0-rc4/CMakeCCompiler.cmake
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/CMakeFiles/3.16.0-rc4/CMakeCXXCompiler.cmake
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/CMakeFiles/3.16.0-rc4/CMakeRCCompiler.cmake
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/CMakeFiles/3.16.0-rc4/CMakeSystem.cmake

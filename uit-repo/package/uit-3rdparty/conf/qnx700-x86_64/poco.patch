@@ -1,0 +1,47 @@
+diff --git a/Foundation/src/File_UNIX.cpp b/Foundation/src/File_UNIX.cpp
+index 3eb2d79..f345eb8 100644
+--- a/Foundation/src/File_UNIX.cpp
++++ b/Foundation/src/File_UNIX.cpp
+@@ -23,7 +23,7 @@
+ #if defined(POCO_OS_FAMILY_BSD)
+ #include <sys/param.h>
+ #include <sys/mount.h>
+-#elif (POCO_OS == POCO_OS_SOLARIS)
++#elif (POCO_OS == POCO_OS_SOLARIS) || (POCO_OS == POCO_OS_QNX)
+ #include <sys/statvfs.h>
+ #else
+ #include <sys/statfs.h>
+@@ -35,7 +35,7 @@
+ #include <utime.h>
+ #include <cstring>
+ 
+-#if (POCO_OS == POCO_OS_SOLARIS)
++#if (POCO_OS == POCO_OS_SOLARIS) || (POCO_OS == POCO_OS_QNX)
+ #define STATFSFN statvfs
+ #define STATFSSTRUCT statvfs
+ #else
+diff --git a/build/config/QNX b/build/config/QNX
+index bb933a2..e1e5d37 100644
+--- a/build/config/QNX
++++ b/build/config/QNX
+@@ -32,6 +32,7 @@ endif
+ endif
+ endif
+ endif
++CCVER = 5.4.0,gcc_nto$(UIT_ARCH)
+ CC      = qcc -V$(CCVER)
+ CXX     = QCC -V$(CCVER)
+ LINK    = $(CXX) -V$(CCVER)
+diff --git a/build/rules/compile b/build/rules/compile
+index f513434..6625f15 100644
+--- a/build/rules/compile
++++ b/build/rules/compile
+@@ -17,7 +17,7 @@ INCLUDE += $(foreach l,$(target_includes),-I$(l))
+ 
+ all: $(DEFAULT_TARGET)
+ all_static: static_debug static_release
+-all_shared: shared_debug shared_release
++all_shared: shared_release
+ all_debug: static_debug shared_debug
+ all_release: static_release shared_release
+ 

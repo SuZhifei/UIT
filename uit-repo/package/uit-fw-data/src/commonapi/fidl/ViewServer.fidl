@@ -1,0 +1,133 @@
+package uit.datafw
+
+import uit.datafw.Types.* from "DatafwTypes.fidl"
+
+interface ViewServer {
+    version {
+        major 1
+        minor 0
+    }
+	
+    method Connect {
+        in {
+			Int32	pid
+			String	data_json
+        }
+    }
+    method PostEvent {
+        in {
+			String	event
+			String	args
+        }
+    }
+    broadcast NotifySyncedModel selective {
+        out {
+			String				json
+			Image[]				images
+			ListAttachment[]	listattachment
+        }
+    }
+    broadcast NotifyBoolean selective {
+        out {
+			String	path
+            Boolean value
+			UInt64 	timestamp
+        }
+    }
+    broadcast NotifyInteger selective {
+        out {
+			String	path
+            Int32 	value
+			UInt64 	timestamp
+        }
+    }
+    broadcast NotifyReal selective {
+        out {
+			String	path
+            Double 	value
+			UInt64 	timestamp
+        }
+    }
+    broadcast NotifyString selective {
+        out {
+			String	path
+            String 	value
+			UInt64 	timestamp
+        }
+    }
+    broadcast NotifyEnum selective {
+        out {
+			String	path
+            Int32 	value
+			String	strValue
+			UInt64 	timestamp
+        }
+    }
+    broadcast NotifyImage selective {
+        out {
+			String	path
+			Image	image
+			UInt64 	timestamp
+        }
+    }
+    broadcast NotifyGroup selective {
+        out {
+			String[]	paths
+			String		json
+			UInt64 		timestamp
+        }
+    }
+    broadcast NotifyResizeList selective {
+        out {
+			String	path
+            UInt32 	size
+        }
+    }
+    broadcast NotifyInsertListItems selective {
+        out {
+			String	path
+            UInt32 	beg
+			UInt32	count
+        }
+    }
+    broadcast NotifyRemoveListItems selective {
+        out {
+			String	path
+            UInt32 	beg
+			UInt32	count
+        }
+    }
+    broadcast NotifyUpdateListItems selective {
+        out {
+			String		path
+			UInt32[]	indexs
+            String 		json
+			Image[]		images
+        }
+    }
+    broadcast NotifyListViewport selective {
+        out {
+			String	path
+            UInt32 	first
+        }
+    }
+    broadcast NotifyCheckListItem selective {
+        out {
+			String	path
+            Int32 	index
+        }
+    }
+    broadcast NotifyFocusListItem selective {
+        out {
+			String	path
+            Int32 	index
+        }
+    }
+	broadcast NotifyVKey {
+        out {
+			Int32	key
+			Int32	keystate
+        }
+    }
+
+}

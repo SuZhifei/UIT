@@ -1,0 +1,13 @@
+prefix=/work/uit/uit-repo/package/uit-3rdparty/dist/linux-x11/release
+exec_prefix=/work/uit/uit-repo/package/uit-3rdparty/dist/linux-x11/release
+libdir=/work/uit/uit-repo/package/uit-3rdparty/dist/linux-x11/release/lib
+includedir=/work/uit/uit-repo/package/uit-3rdparty/dist/linux-x11/release/include
+
+Name: 
+Description: C++ CommonAPI SOME/IP Runtime
+Version: 3.1.12
+Libs: -L${libdir} -lCommonAPI-SomeIP
+Requires: CommonAPI
+Requires.private: vsomeip
+Cflags: -I${includedir}/CommonAPI-3.1
+

@@ -1,0 +1,8 @@
+D:/share/UIT/uit-repo/dist/win32/uit/lib/release/uit_core.lib
+D:/share/UIT/uit-repo/dist/win32/uit/lib/release/uit_core.dll
+D:/share/UIT/uit-repo/dist/win32/uit/include/uit/core/Def.h
+D:/share/UIT/uit-repo/dist/win32/uit/include/uit/core/Event.h
+D:/share/UIT/uit-repo/dist/win32/uit/include/uit/core/Log.h
+D:/share/UIT/uit-repo/dist/win32/uit/include/uit/core/Runtime.h
+D:/share/UIT/uit-repo/dist/win32/uit/etc/uit.log.conf
+D:/share/UIT/uit-repo/dist/win32/uit/bin/release/uit.test.core.exe

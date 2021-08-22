@@ -1,0 +1,31 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainPage.qml</file>
+        <file>ModelTree.qml</file>
+        <file>LogPanel.qml</file>
+        <file>DataInfo.qml</file>
+        <file>DataIcon.qml</file>
+        <file>images/binary.png</file>
+        <file>images/bool.png</file>
+        <file>images/enum.png</file>
+        <file>images/image.png</file>
+        <file>images/int.png</file>
+        <file>images/list.png</file>
+        <file>images/object.png</file>
+        <file>images/real.png</file>
+        <file>images/string.png</file>
+        <file>ValueInput.qml</file>
+        <file>ValueInfo.qml</file>
+        <file>TableData.qml</file>
+        <file>EventInfo.qml</file>
+        <file>CurrentInfo.qml</file>
+        <file>images/event.png</file>
+        <file>EventArg.qml</file>
+        <file>EventListener.qml</file>
+        <file>EnumDefinitionInfo.qml</file>
+        <file>ItemTemplateInfo.qml</file>
+        <file>images/EnumDef.png</file>
+        <file>images/Template.png</file>
+    </qresource>
+</RCC>

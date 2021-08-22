@@ -1,0 +1,104 @@
+import "platform:/plugin/org.genivi.commonapi.someip/deployment/CommonAPI-SOMEIP_deployment_spec.fdepl"
+import "DatafwTypes.fdepl"
+import "ViewServer.fidl"
+
+define org.genivi.commonapi.someip.deployment for interface uit.datafw.ViewServer {
+    SomeIpServiceID = 10001     /* 0x3001 */
+
+    method Connect {
+        SomeIpMethodID = 1
+    }
+
+    method PostEvent {
+        SomeIpMethodID = 2
+    }
+
+    broadcast NotifySyncedModel {
+        SomeIpEventID = 42001
+        SomeIpEventGroups = { 1 }
+    }
+
+    broadcast NotifyBoolean {
+        SomeIpEventID = 42002
+        SomeIpEventGroups = { 2 }
+    }
+
+    broadcast NotifyInteger {
+        SomeIpEventID = 42003
+        SomeIpEventGroups = { 3 }
+    }
+
+    broadcast NotifyReal {
+        SomeIpEventID = 42004
+        SomeIpEventGroups = { 4 }
+    }
+
+    broadcast NotifyString {
+        SomeIpEventID = 42005
+        SomeIpEventGroups = { 5 }
+    }
+
+    broadcast NotifyEnum {
+        SomeIpEventID = 42006
+        SomeIpEventGroups = { 6 }
+    }
+
+    broadcast NotifyImage {
+        SomeIpEventID = 42007
+        SomeIpEventGroups = { 7 }
+    }
+
+    broadcast NotifyGroup {
+        SomeIpEventID = 42008
+        SomeIpEventGroups = { 8 }
+    }
+
+    broadcast NotifyResizeList {
+        SomeIpEventID = 42009
+        SomeIpEventGroups = { 9 }
+    }
+
+    broadcast NotifyInsertListItems {
+        SomeIpEventID = 42010
+        SomeIpEventGroups = { 10 }
+    }
+
+    broadcast NotifyRemoveListItems {
+        SomeIpEventID = 42011
+        SomeIpEventGroups = { 11 }
+    }
+
+    broadcast NotifyUpdateListItems {
+        SomeIpEventID = 42012
+        SomeIpEventGroups = { 12 }
+    }
+
+    broadcast NotifyListViewport {
+        SomeIpEventID = 42013
+        SomeIpEventGroups = { 13 }
+    }
+
+    broadcast NotifyCheckListItem {
+        SomeIpEventID = 42014
+        SomeIpEventGroups = { 14 }
+    }
+
+    broadcast NotifyFocusListItem {
+        SomeIpEventID = 42015
+        SomeIpEventGroups = { 15 }
+    }
+
+    broadcast NotifyVKey {
+        SomeIpEventID = 42020
+        SomeIpEventGroups = { 20 }
+    }
+
+}
+
+define org.genivi.commonapi.someip.deployment for provider Service {
+    instance uit.datafw.ViewServer {
+        InstanceId = "uit.datafw.view"
+
+        SomeIpInstanceID = 20001     /* 0x4001 */
+    }
+}

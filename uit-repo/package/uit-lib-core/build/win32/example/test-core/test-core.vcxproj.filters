@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\share\UIT\uit-repo\package\uit-lib-core\example\test-core\TestEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\share\UIT\uit-repo\package\uit-lib-core\example\test-core\TestLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\share\UIT\uit-repo\package\uit-lib-core\example\test-core\TestRuntime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\share\UIT\uit-repo\package\uit-lib-core\example\test-core\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\share\UIT\uit-repo\package\uit-lib-core\example\test-core\TestBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\share\UIT\uit-repo\package\uit-lib-core\example\test-core\TestEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\share\UIT\uit-repo\package\uit-lib-core\example\test-core\TestLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\share\UIT\uit-repo\package\uit-lib-core\example\test-core\TestRuntime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\share\UIT\uit-repo\package\uit-lib-core\example\test-core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9CC37835-0CDD-30C9-BBC6-829BD2396F5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{89D643E4-C65A-3172-B7FE-D1CB63F5CA5D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

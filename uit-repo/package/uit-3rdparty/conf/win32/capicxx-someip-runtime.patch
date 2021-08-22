@@ -1,0 +1,28 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 255c305..c4a7c2f 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -49,6 +49,9 @@ endif()
+ 
+ if (MSVC) 
+ # Boost
++SET(BOOST_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/../boost)
++SET(BOOST_LIBRARYDIR ${BOOST_ROOT}/stage/lib)
++ADD_DEFINITIONS(-DBOOST_LIB_DIAGNOSTIC)
+ find_package( Boost 1.54 COMPONENTS system thread log REQUIRED )
+ if(Boost_FOUND)
+   if(Boost_LIBRARY_DIR)
+@@ -92,12 +95,7 @@ set (INSTALL_LIB_DIR lib CACHE PATH "Installation directory for libraries")
+ set (INSTALL_BIN_DIR bin CACHE PATH "Installation directory for executables")
+ set (INSTALL_INCLUDE_DIR include/CommonAPI-${COMMONAPI_API_HEADER_VERSION} CACHE PATH "Installation directory for header files")
+ 
+-if (WIN32 AND NOT CYGWIN)
+-    set (DEF_INSTALL_CMAKE_DIR cmake)
+-else ()
+-    set (DEF_INSTALL_CMAKE_DIR lib/cmake/CommonAPI-SomeIP-${COMPONENT_VERSION})
+-endif ()
+-
++set (DEF_INSTALL_CMAKE_DIR lib/cmake/CommonAPI-SomeIP-${COMPONENT_VERSION})
+ set (INSTALL_CMAKE_DIR ${DEF_INSTALL_CMAKE_DIR} CACHE PATH "Installation directory for CMake files")
+ 
+ # Make relative paths absolute (needed later on)

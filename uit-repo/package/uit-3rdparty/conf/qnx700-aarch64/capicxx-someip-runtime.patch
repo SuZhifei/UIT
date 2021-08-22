@@ -1,0 +1,125 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index e07b665..c54de21 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -57,7 +57,7 @@ include_directories( ${Boost_INCLUDE_DIR} )
+ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D_CRT_SECURE_NO_WARNINGS /wd4503")
+ link_directories(${Boost_LIBRARY_DIR})
+ else()
+-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x -Wall -Wextra -Wformat -Wformat-security -Wconversion -fexceptions -fstrict-aliasing -fstack-protector -fasynchronous-unwind-tables -fno-omit-frame-pointer -DCOMMONAPI_INTERNAL_COMPILATION -D_GLIBCXX_USE_NANOSLEEP")
++set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11 -Wall -Wextra -Wformat -Wformat-security -Wconversion -fexceptions -fstrict-aliasing -fstack-protector -fasynchronous-unwind-tables -fno-omit-frame-pointer -DCOMMONAPI_INTERNAL_COMPILATION -D_GLIBCXX_USE_NANOSLEEP")
+ endif()
+ 
+ SET(MAX_LOG_LEVEL "DEBUG" CACHE STRING "maximum log level")
+@@ -79,6 +79,7 @@ endmacro ()
+ if (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+     set (OS "LINUX")
+     set (NO_DEPRECATED_REGISTER "")
++    set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
+ endif (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+ 
+ if (${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
+@@ -86,8 +87,14 @@ if (${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
+     set (NO_DEPRECATED_REGISTER "-Wno-deprecated-register")
+ endif (${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
+ 
++if (${CMAKE_SYSTEM_NAME} MATCHES "QNX")
++    set (OS "QNX")
++    set (NO_DEPRECATED_REGISTER "")
++    set (Boost_USE_STATIC_LIBS ON)
++endif (${CMAKE_SYSTEM_NAME} MATCHES "QNX")
++
+ if (NOT MSVC)
+-    set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D${OS} ${NO_DEPRECATED_REGISTER} -DBOOST_LOG_DYN_LINK -pthread -g -std=c++0x -O0")
++    set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D${OS} ${NO_DEPRECATED_REGISTER} -DBOOST_LOG_DYN_LINK -g -std=gnu++11 -O0")
+ endif()
+ # END TEMPORARY WORKAROUND #
+ 
+@@ -129,7 +136,7 @@ message(STATUS "COMMONAPI_INCLUDE_DIRS: ${COMMONAPI_INCLUDE_DIRS}")
+ message(STATUS "CommonAPI Version: ${CommonAPI_VERSION}")
+ 
+ # Boost
+-find_package( Boost 1.54 COMPONENTS system thread log REQUIRED )
++find_package( Boost 1.54 COMPONENTS system thread filesystem log REQUIRED )
+ include_directories( ${Boost_INCLUDE_DIR} )
+ 
+ find_package (vsomeip 2.5.0 REQUIRED)
+diff --git a/include/CommonAPI/SomeIP/ProxyHelper.hpp b/include/CommonAPI/SomeIP/ProxyHelper.hpp
+index 324484b..68757cf 100644
+--- a/include/CommonAPI/SomeIP/ProxyHelper.hpp
++++ b/include/CommonAPI/SomeIP/ProxyHelper.hpp
+@@ -135,7 +135,7 @@ struct ProxyHelper<In_<InArgs_...>, Out_<OutArgs_...>> {
+         callMethodWithReply(_proxy, methodCall, _isLittleEndian, _info, _inArgs..., _callStatus, _outArgs...);
+     }
+ 
+-    template <typename Proxy_ = Proxy, typename DelegateFunction_>
++    template <typename DelegateFunction_, typename Proxy_ = Proxy>
+     static std::future<CallStatus> callMethodAsync(
+                     Proxy_ &_proxy,
+                     const method_id_t _methodId,
+@@ -149,7 +149,7 @@ struct ProxyHelper<In_<InArgs_...>, Out_<OutArgs_...>> {
+         return callMethodAsync(_proxy, methodCall, _isLittleEndian, _info, _inArgs..., _function, _outArgs);
+     }
+ 
+-    template <typename Proxy_ = Proxy, typename DelegateFunction_>
++    template <typename DelegateFunction_, typename Proxy_ = Proxy>
+     static std::future<CallStatus> callMethodAsync(
+                     Proxy_ &_proxy,
+                     Message &_message,
+diff --git a/include/CommonAPI/SomeIP/StringEncoder.hpp b/include/CommonAPI/SomeIP/StringEncoder.hpp
+index ee8bd0c..6ed73c3 100644
+--- a/include/CommonAPI/SomeIP/StringEncoder.hpp
++++ b/include/CommonAPI/SomeIP/StringEncoder.hpp
+@@ -14,7 +14,7 @@
+ #include <CommonAPI/SomeIP/Types.hpp>
+ #include <vector>
+ 
+-#if WIN32
++#if defined(WIN32) || defined(__QNX__)
+     #define LITTLE_ENDIAN 1234
+     #define BIG_ENDIAN 4321
+ #endif
+diff --git a/src/CommonAPI/SomeIP/Connection.cpp b/src/CommonAPI/SomeIP/Connection.cpp
+index 02990b4..9199f5a 100644
+--- a/src/CommonAPI/SomeIP/Connection.cpp
++++ b/src/CommonAPI/SomeIP/Connection.cpp
+@@ -416,7 +416,7 @@ Message Connection::sendMessageWithReplyAndBlock(
+                         ", SessionID: ", message.getSessionId());
+         }
+ 
+-        itsAnswer = sendAndBlockAnswers_.emplace(message.getSessionId(), Message());
++        itsAnswer = sendAndBlockAnswers_.insert(std::make_pair(message.getSessionId(), Message()));
+     }
+ 
+     std::unique_lock<std::mutex> lock(sendAndBlockMutex_);
+diff --git a/src/CommonAPI/SomeIP/Watch.cpp b/src/CommonAPI/SomeIP/Watch.cpp
+index efac1b2..b05d53d 100644
+--- a/src/CommonAPI/SomeIP/Watch.cpp
++++ b/src/CommonAPI/SomeIP/Watch.cpp
+@@ -5,6 +5,8 @@
+ 
+ #include <CommonAPI/SomeIP/Watch.hpp>
+ 
++#include <sys/types.h>
++#include <unistd.h>
+ #include <fcntl.h>
+ #include <cstdio>
+ 
+@@ -144,6 +146,17 @@ Watch::Watch(const std::shared_ptr<Connection>& _connection) : pipeValue_(4) {
+         closesocket(ListenSocket);
+         WSACleanup();
+     }
++#elif defined(__QNX__)
++    if(pipe(pipeFileDescriptors_) == -1) {
++        std::perror(__func__);
++    }
++    for (auto fd : pipeFileDescriptors_) {
++        int flags = fcntl(fd, F_GETFL);
++        flags |= O_NONBLOCK;
++        if (fcntl(fd, F_SETFL, flags) == -1) {
++            std::perror(__func__);
++        }
++    }
+ #else
+     if(pipe2(pipeFileDescriptors_, O_NONBLOCK) == -1) {
+         std::perror(__func__);

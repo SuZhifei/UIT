@@ -1,0 +1,133 @@
+package uit.datafw
+
+import uit.datafw.Types.* from "DatafwTypes.fidl"
+
+interface ControllerServer {
+    version {
+        major 1
+        minor 0
+    }
+	
+    method RegisterEvents {
+        in {
+			Int32	 pid
+            String[] events
+        }
+    }
+    method SetBoolean {
+        in {
+			String	path
+            Boolean value
+			UInt64 	timestamp
+        }
+    }
+    method SetInteger {
+        in {
+			String	path
+            Int32 	value
+			UInt64 	timestamp
+        }
+    }
+    method SetReal {
+        in {
+			String	path
+            Double 	value
+			UInt64 	timestamp
+        }
+    }
+    method SetString {
+        in {
+			String	path
+            String 	value
+			UInt64 	timestamp
+        }
+    }
+    method SetEnum {
+        in {
+			String	path
+            Int32 	value
+			UInt64 	timestamp
+        }
+    }
+    method SetEnumStringValue {
+        in {
+			String	path
+            String 	value
+			UInt64 	timestamp
+        }
+    }
+    method SetImage {
+        in {
+			String	path
+			Image	image
+			UInt64 	timestamp
+        }
+    }
+    method SetGroup {
+        in {
+			String[]	paths
+			String		json
+			UInt64 		timestamp
+        }
+    }
+    method ResizeList {
+        in {
+			String	path
+            UInt32 	size
+        }
+    }
+    method InsertListItems {
+        in {
+			String	path
+            UInt32 	beg
+			UInt32	count
+        }
+    }
+    method RemoveListItems {
+        in {
+			String	path
+            UInt32 	beg
+			UInt32	count
+        }
+    }
+    method SetListViewport {
+        in {
+			String	path
+            UInt32 	first
+        }
+    }
+    method UpdateListItems {
+        in {
+			String		path
+			UInt32[]	indexs
+            String 		json
+			Image[]		images
+        }
+    }
+    method CheckListItem {
+        in {
+			String	path
+            Int32 	index
+        }
+    }
+    method FocusListItem {
+        in {
+			String	path
+            Int32 	index
+        }
+    }
+	method VKey {
+		in {
+			Int32	key
+			Int32	keystate
+		}
+	}
+
+    broadcast UserAction selective {
+        out {
+            String	event
+			String	args
+        }
+    }
+
+}

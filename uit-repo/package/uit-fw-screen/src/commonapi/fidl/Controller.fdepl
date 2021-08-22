@@ -1,0 +1,60 @@
+import "platform:/plugin/org.genivi.commonapi.someip/deployment/CommonAPI-SOMEIP_deployment_spec.fdepl"
+import "ScreenfwTypes.fdepl"
+import "Controller.fidl"
+
+define org.genivi.commonapi.someip.deployment for interface uit.screenfw.Controller {
+	SomeIpServiceID = 90000
+
+    method SetVisibility {
+        SomeIpMethodID = 1
+		SomeIpReliable = true
+    }
+
+    method SetPosition {
+        SomeIpMethodID = 2
+		SomeIpReliable = true
+    }
+
+    method SetClipPosition {
+        SomeIpMethodID = 3
+		SomeIpReliable = true
+    }
+
+    method SetSize {
+        SomeIpMethodID = 4
+		SomeIpReliable = true
+    }
+
+    method SetClipSize {
+        SomeIpMethodID = 5
+		SomeIpReliable = true
+    }
+
+    method SetRect {
+        SomeIpMethodID = 6
+		SomeIpReliable = true
+    }
+
+    method SetClipRect {
+        SomeIpMethodID = 7
+		SomeIpReliable = true
+    }
+
+    method SetFullScreen {
+        SomeIpMethodID = 8
+		SomeIpReliable = true
+    }
+
+    method Screenshot {
+        SomeIpMethodID = 9
+		SomeIpReliable = true
+    }
+}
+
+define org.genivi.commonapi.someip.deployment for provider Service {
+    instance uit.screenfw.Controller {
+        InstanceId = "uit.screenfw.controller"
+
+        SomeIpInstanceID = 91000
+    }
+}

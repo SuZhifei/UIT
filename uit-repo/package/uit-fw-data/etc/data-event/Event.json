@@ -1,0 +1,102 @@
+{
+	"DrivingInfo" :
+	{
+		"ClearEvent" 							: {"Clear" : ["Global.MarkEnum", 0]},
+		"SwitchSceneEvent"						: {"Scene" : ["Global.SceneEnum", 0]},
+		"SwitchPageEvent"						: {"Page" : ["Global.PageEnum", 0]}
+	},
+	"Adas" :
+	{
+		"SwitchSceneEvent"					: {"Scene" : ["Global.SceneEnum", 0]},
+		"ParkingEvent" 							: {"State" : ["BodyInfo.ParkEnum", 0]},
+		"Camera" :
+		{
+			"AdjustBrightnessEvent" 			: {"Value" : 0.0, "UIOperator" : false},
+			"AdjustContrastEvent" 				: {"Value" : 0.0, "UIOperator" : false},
+			"AdjustHueEvent" 					: {"Value" : 0.0, "UIOperator" : false},
+			"AdjustSaturationEvent" 			: {"Value" : 0.0, "UIOperator" : false},
+			"FullScreenEvent"					: {"FullScreen" : ["Global.MarkEnum", 0]},
+			"EnableAuxiliaryLineEvent"			: {"OnOff" : ["Global.MarkEnum", 0]},
+			"Enable3DEvent"						: {"OnOff" : ["Global.MarkEnum", 0]}
+		}
+	},
+	"BodyControl" : 
+	{
+		"SwitchSceneEvent"						: {"Scene" : ["Global.SceneEnum", 0]},
+		"SelectDrivingRoadEvent"				: {"Road" : ["BodyControl.DrivingRoadEnum", 0]},
+		"SelectLightThemeEvent"					: {"Theme" : ["Global.ThemeEnum", 0]},
+		"AutoAdjustLightEvent"					: {"Auto" : ["Global.MarkEnum", 0]},
+		"AdjustSuspendedEvent"					: {"Auto" : ["Global.LevelEnum", 0]},
+		"AirConditioner" :
+		{
+			"SwitchSceneEvent"					: {"Scene" : ["Global.SceneEnum", 0]},
+			"SwitchEvent"						: {"Switch" : ["Global.SwitchEnum", 0]},
+			"ACSwitchEvent"						: {"Switch" : ["Global.SwitchEnum", 0]},
+			"ChangeWorkModeEvent"				: {"Mode" : ["BodyControl.ACWorkModeEnum", 0]},
+			"AirCirculationEvent"				: {"Mode" : ["BodyControl.AirCirculationEnum", 0]},
+			"FrontDefrostEvent"					: {"OnOff" : ["Global.MarkEnum", 0]},
+			"RearDefrostEvent"					: {"OnOff" : ["Global.MarkEnum", 0]},
+			"AdjustTempEvent"					: {"OutletIndex" : 0, "Value" : 0.0, "UserOperator" : false},
+			"AdjustWindSpeedEvent"				: {"OutletIndex" : 0, "Speed" : ["Global.LevelEnum", 0]},
+			"BlowHeadEvent" 					: {"OutletIndex" : 0, "Blow" : ["Global.MarkEnum", 0]},
+			"BlowFeetEvent" 					: {"OutletIndex" : 0, "Blow" : ["Global.MarkEnum", 0]},
+			"BlowWindowEvent" 					: {"OutletIndex" : 0, "Blow" : ["Global.MarkEnum", 0]}
+		},
+		"Seat" :
+		{
+			"SwitchSceneEvent"					: {"Scene" : ["Global.SceneEnum", 0]},
+			"PopupEvent"						: {"Pop" : ["Global.PopupEnum", 0]},
+			"AdjustTempEvent"					: {"SeatIndex" : 0, "Temp" : ["Global.LevelEnum", 0], "UserOperator" : false},
+			"AdjustWindSpeedEvent"				: {"SeatIndex" : 0, "Speed" : ["Global.LevelEnum", 0]},
+			"AdjustFrontBackRangeEvent" 		: {"SeatIndex" : 0, "Range" : 0.0, "UserOperator" : false},
+			"AdjustCurvatureRangeEvent" 		: {"SeatIndex" : 0, "Range" : 0.0, "UserOperator" : false},
+			"FastConfigNameEvent"				: {"SeatIndex" : 0, "Name" : ""},
+			"AddConfigEvent"					: {"SeatIndex" : 0, "Name" : "", "Temp" : ["Global.LevelEnum", 0], "WindSpeed" : ["Global.LevelEnum", 0], "FrontBackRange" : 0.0, "CurvatureRange" : 0.0},
+			"RemoveConfigEvent"					: {"SeatIndex" : 0, "Index" : 0},
+			"ClearConfigEvent"					: {},
+			"EditEvent"							: {"SeatIndex" : 0},
+			"SelectSeatConfigEvent"				: {"SeatIndex" : 0, "ConfigIndex" : 0}
+		},
+		"DoorWindow" :
+		{
+			"SwitchSceneEvent"					: {"Scene" : ["Global.SceneEnum", 0]},
+			"SwitchDoorEvent"					: {"DoorIndex" : 0, "Switch" : ["Global.SwitchEnum", 0]},
+			"SwitchAllDoorEvent"				: {"Switch" : ["Global.SwitchEnum", 0]},
+			"LockDoorEvent"						: {"DoorIndex" : 0, "Lock" : ["Global.MarkEnum", 0]},
+			"LockAllDoorEvent"					: {"Lock" : ["Global.MarkEnum", 0]},
+			"OpenWindowEvent"					: {"WindowIndex" : 0, "Value" : ["Global.LevelEnum", 0]},
+			"OpenAllWindowEvent"				: {"Value" : ["Global.LevelEnum", 0]},
+			"SwitchTrunkEvent"					: {"Switch" : ["Global.SwitchEnum", 0]}
+		}
+	},
+	"Navi" :
+	{
+		"SwitchSceneEvent"						: {"Scene" : ["Global.SceneEnum", 0]},
+		"FullScreenEvent"						: {"FullScreen" : ["Global.MarkEnum", 0]},
+		"ChangeNaviPathStrategyEvent"			: {"Strategy" : ["Navi.PathStrategyEnum", 0]}
+	},
+	"System" :
+	{
+		"BootDoneEvent"							: {}
+	},
+	"Setting" : 
+	{
+		"SelectLanguageEvent"					: {"Language" : ["Global.LanguageEnum", 0]},
+		"SelectThemeEvent"						: {"Theme" : ["Global.ThemeEnum", 0]}
+	},
+	"Music" :
+	{
+		"PlayEvent"								: {},
+		"PauseEvent"							: {},
+		"PlayPrevEvent"							: {},
+		"PlayNextEvent"							: {}
+	},
+	"Bt" :
+	{
+		"CallRecord" :
+		{
+			"ListScrollEvent"					: {"Index" : 0},
+			"CallEvent"							: {"Index" : 0}
+		}
+	}
+}

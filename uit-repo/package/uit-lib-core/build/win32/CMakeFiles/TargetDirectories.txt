@@ -1,0 +1,17 @@
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/CMakeFiles/INSTALL.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/CMakeFiles/ALL_BUILD.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/CMakeFiles/ZERO_CHECK.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/src/CMakeFiles/INSTALL.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/src/CMakeFiles/ALL_BUILD.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/src/core/CMakeFiles/core.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/src/core/CMakeFiles/INSTALL.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/src/core/CMakeFiles/ALL_BUILD.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/include/CMakeFiles/INSTALL.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/include/CMakeFiles/ALL_BUILD.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/etc/CMakeFiles/INSTALL.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/etc/CMakeFiles/ALL_BUILD.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/example/CMakeFiles/INSTALL.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/example/CMakeFiles/ALL_BUILD.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/example/test-core/CMakeFiles/test-core.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/example/test-core/CMakeFiles/INSTALL.dir
+D:/share/UIT/uit-repo/package/uit-lib-core/build/win32/example/test-core/CMakeFiles/ALL_BUILD.dir

@@ -1,0 +1,746 @@
+{
+	"Electric" :
+	{		
+		"EnergyStateInt" : 0,
+		"BatteryLevelFloat" : 0.0,
+		"BatteryStatusInt" : 0
+	},	 
+	"Indicator" :
+	{
+		"LED_LeftTurn" : 0,
+		"LED_RightTurn" : 0,
+		"LED_Position" : 0,
+		"LED_HighBeam" : 0,
+		"LED_RearFog-Yellow" : 0,
+		"LED_FrontFog-Green" : 0,
+		"LED_NearBeam" : 0 ,
+		"LED_TPMS-Yellow" : 0,
+		"LED_ABS-Yellow" : 0,
+		"LED_Daytime-Green" : 0,
+		"LED_BrakeFluidLevel-Red" : 0,
+		"LED_EBD-Yellow" : 0,
+		"LED_EPB-Red" : 0,
+		"LED_EPB-Yellow" : 0,
+		"LED_EPB-Green" : 0,
+		"LED_ElecStabilityOFF-Yellow" : 0,
+		"LED_ElecStability-Yellow" : 0,
+		"LED_ParkingSys-Yellow" : 0,
+		"LED_SeatBelt-Red" : 0,
+		"LED_AirBag-Red" : 0,
+		"LED_PassSeatBelt-Red" : 0,
+		"LED_CoolantTemp-Red" : 0,
+		"LED_CoolantTemp-Blue" : 0,
+		"LED_CoolantTempNormal" : 0,
+		"LED_CoolantTemp-Yellow" : 0,
+		"LED_OilPressure-Red" : 0,
+		"LED_FuelLevel-Normal" : 0,
+		"LED_FuelLevelLow-Yellow" : 0,
+		"LED_Charging-Red" : 0,
+		"LED_MILEmission-Yellow" : 0,
+		"LED_MIL-Yellow" : 0,
+		"LED_GearBoxFault-Yellow" : 0,
+		"LED_GearBoxFault-Red" : 0,
+		"LED_GearBoxTemp-Yellow" : 0,
+		"LED_GearBoxTemp-Red" : 0,
+		"LED_StartStopON" : 0,
+		"LED_StartStopForbid" : 0,
+		"LED_StartStopForbid-Yellow" : 0,
+		"LED_StartStop-Green" : 0,
+		"LED_StartStop-Yellow" : 0,
+		"LED_AEB-Red" : 0,
+		"LED_AEB-Green" : 0,
+		"LED_AEB-Yellow" : 0,
+		"LED_EngineTheft-Red" : 0,
+		"LED_EPS-Yellow" : 0,
+		"LED_LDWRight-Red" : 0,
+		"LED_LDWRight-Yellow" : 0,
+		"LED_LDWRight-Green" : 0,
+		"LED_LDWRight-White" : 0,
+		"LED_LDWRight-Grey" : 0,
+		"LED_LDWLeft-Red" : 0,
+		"LED_LDWLeft-Yellow" : 0,
+		"LED_LDWLeft-Green" : 0,
+		"LED_LDWLeft-White" : 0,
+		"LED_LDWLeft-Grey" : 0,
+		"LED_HMA-White" : 0,
+		"LED_HMA-Yellow" : 0,
+		"LED_HMA-Grey" : 0,
+		"LED_ThinIce-Green" : 0,
+		"LED_RLSeatBelt-White" : 0,
+		"LED_RLSeatBelt-Red" : 0,
+		"LED_RLSeatBelt-Green" : 0,
+		"LED_RMSeatBelt-White" : 0,
+		"LED_RMSeatBelt-Red" : 0,
+		"LED_RMSeatBelt-Green" : 0,
+		"LED_RRSeatBelt-White" : 0,
+		"LED_RRSeatBelt-Red" : 0,
+		"LED_RRSeatBelt-Green" : 0,
+		"LED_Camer-Yellow" : 0,
+		"LED_BSD-White" : 0,
+		"LED_BSD-Yellow" : 0,
+		"LED_BSD-Green" : 0,
+		"LED_AFSOFF-Yellow" : 0,
+		"LED_AFS-Yellow" : 0,
+		"LED_EPC-Yellow" : 0,
+		"LED_DrivingModeECO" : 0,
+		"LED_DrivingModeNormal" : 0,
+		"LED_DrivingModeSport" : 0,
+		"LED_DrivingMode" : 0,
+		"LED_FatigueDriving" : 0,
+		"LED_MaintenanceTip" : 0,
+		"LED_TJA-Grey" : 0,
+		"LED_TJA-Green" : 0,
+		"LED_TJA-Yellow" : 0,
+		"LED_AVH-Green" : 0,
+		"LED_AVH-Yellow" : 0,
+		"LED_EPS-Yellow" : 0,
+		"LED_HDC-Green" : 0,
+		"LED_HDC-Yellow" : 0,
+		"LED_LaneKeeping-Green" : 0,
+		"LED_LaneKeeping-Yellow" : 0,
+		"LED_LaneKeeping-Grey" : 0,
+		"LED_ACCNoObject-Green" : 0,
+		"LED_ACCNoObject-Grey" : 0,
+		"LED_ACCNoObject-Yellow" : 0,
+		"LED_ACCNoObject-White" : 0,
+		"LED_ACCTargetObject-Green" : 0,
+		"LED_ACCTargetObject-Grey" : 0,
+		"LED_ACCTargetObject-Yellow" : 0,
+		"LED_ACCTargetObject-White" : 0,
+		"LED_FCW-Red" : 0,
+		"LED_FCW-Yellow" : 0,
+		"LED_FCW-Green" : 0,
+		"LED_LimAuto" : 0,
+		"LED_Lim" : 0,
+		"LED_GPF-Yellow" : 0,
+		"LED_GPF-Green" : 0,
+		"LED_Warning" : 0,
+		"LED_ACC_SW_Blue" : 0,
+		"LED_ACC_SW_White" : 0,
+		"LED_ACC_SW_Yellow" : 0,
+		"LED_ACC_SW_Handle_Blue" : 0,
+		"LED_ACC_SW_Handle_Yellow" : 0,
+		"LED_ChildLock_Open" : 0,
+		"LED_EleSteerLock_Yellow" : 0,
+		"LED_EleSteerLock_Red" : 0,
+		"LED_EleSteerLock_White" : 0
+	},
+	"DrivingInfo" :
+	{
+		"Page" : ["Global.PageEnum", 0],
+		"Current" :
+		{
+			"RPMFloat" : 0.0,
+			"SpeedFloat" : 0.0,
+			"OverSpeed" : ["Global.MarkEnum", 0],
+			"Gear" : ["BodyInfo.GearEnum", 0],
+			"GearDirection" : ["BodyInfo.GearDirectionEnum", 0],
+			"OilConsumptionFloat" : 0.0,
+			"OilConsumptionValidBool": false,
+			"OilLow" : ["Global.MarkEnum", 0],
+			"DriveMode" : ["Setting.DrivingModeEnum", 0]
+		},
+		"LiquidCoolantTempFloat" : 0.0,
+		"LiquidCoolantTempStr":"",
+		"TripAMileageFloat" : 0.0,
+		"TripAMileageValidBool" : false,
+		"TripBMileageFloat" : 0.0,
+		"TripBMileageValidBool" : false,
+		"TotalTimeInt" : 0,
+		"ODOFloat" : 0.0,
+		"ShortTermTimeInt" : 0,
+		"ShortTermTimeValidBool" : false,
+		"ShortTermMileageFloat" : 0.0,
+		"ShortTermMileageValidBool" : false,
+		"ShortTermOilConsumptionFloat" : 0.0,
+		"ShortTermOilConsumptionValidBool" : false,
+		"LongTermTimeInt" : 0,
+		"LongTermTimeValidBool" : false,
+		"LongTermMileageFloat" : 0.0,
+		"LongTermMileageValidBool" : false,
+		"LongTermOilConsumptionFloat" : 0.0,
+		"LongTermOilConsumptionValidBool" : false,
+		"RefuelTimeInt" : 0,
+		"RefuelTimeValidBool" : false,
+		"RefuelMileageFloat" : 0.0,
+		"RefuelMileageValidBool" : false,
+		"RefuelOilConsumptionFloat" : 0.0,
+		"RefuelOilConsumptionValidBool" : false,
+		"IgnitionTimeInt" : 0,
+		"IgnitionTimeValidBool" : false,
+		"IgnitionMileageFloat" : 0.0,
+		"IgnitionMileageValidBool" : false,
+		"IgnitionOilConsumptionFloat" : 0.0,
+		"IgnitionOilConsumptionValidBool" : false,
+		"RemainingFuelFloat" : 0.0,
+		"RemainingFuelValidBool" : false,
+		"RemainingTimeInt" : 0,
+		"RemainingTimeValidBool" : false,
+		"RemainingMileageFloat" : 0.0,
+		"RemainingMileageState" : ["BodyInfo.RemainingMileageEnum", 0],
+		"AverageFuelConsumptionFloat": 0.0,
+		"AverageFuelConsumptionValidBool":false
+	},
+	"TPMS" :
+	{
+		"FrontLeftPressValueStr" : "",
+		"FrontRightPressValueStr" : "",
+		"RearLeftPressValueStr" : "",
+		"RearRightPressValueStr" : "",
+		"FrontLeftTempValueStr" : "",
+		"FrontRightTempValueStr" : "",
+		"RearLeftTempValueStr" : "",
+		"RearRightTempValueStr" : "",
+		"FrontLeftPressState" : ["Global.StateEnum", 0],
+		"FrontRightPressState" : ["Global.StateEnum", 0],
+		"RearLeftPressState" : ["Global.StateEnum", 0],
+		"RearRightPressState" : ["Global.StateEnum", 0],
+		"FrontLeftTempState" : ["Global.StateEnum", 0],
+		"FrontRightTempState" : ["Global.StateEnum", 0],
+		"RearLeftTempState" : ["Global.StateEnum", 0],
+		"RearRightTempState" : ["Global.StateEnum", 0]
+	},
+	"ADAS" :
+	{
+		"Valid" : ["Global.ValidEnum", 0],
+		"MyCarStateInt" : 0,
+		"SpeedLimitFloat" : 0.0,
+		"SpeedLimitState" : ["BodyControl.SpeedLimitStateEnum", 0],
+		"TargetDistance" : ["Global.LevelEnum", 0],
+		"TargetState" : ["BodyControl.TargetStateEnum", 0],
+		"Rear-endStateInt" : 0,
+		"LDWWarningStateInt" : 0,
+		"BSDWarningStateInt" : 0,
+		"Lane" :
+		{
+			"LaneLineLeftLeftWarnLevelInt" : 0 ,
+			"LaneLineLeftWarnLevelInt" : 0 ,
+			"LaneLineRightWarnLevelInt" : 0,
+			"LaneLineRightRightWarnLevelInt" : 0,
+			"LaneLeftWarnLevelInt" : 0 ,
+			"LaneMiddleWarnLevelInt" : 0 ,
+			"LaneRightWarnLevelInt" : 0
+		},
+		"Parking" :
+		{
+			"APASwitch" : ["Global.SwitchEnum", 0],
+			"ParkingState" : ["BodyInfo.ParkEnum", 0],
+			"EdgeDistance0" : 0,
+			"EdgeDistance1" : 0,
+			"EdgeDistance2" : 0,
+			"EdgeDistance3" : 0,
+			"EdgeDistance4" : 0,
+			"EdgeDistance5" : 0,
+			"EdgeDistance6" : 0,
+			"EdgeDistance7" : 0,
+			"Camera" :
+			{
+				"Brightness" : 0,
+				"Contrast" : 0,
+				"Hue" : 0,
+				"Saturation" : 0,
+				"FullScreen" : ["Global.MarkEnum", 0]
+			}
+		},
+		"Driving" :
+		{
+			"DFM" : ["Global.MarkEnum", 0],					
+		    "FCW" : 
+			{
+				"WarningStateInt": 0
+			},
+			"FDM" : 
+			{
+				"MonitoringCarStateInt": 0,
+				"MonitoringDisStateInt": 0
+			},
+			"RCTA" : 
+			{
+				"MonitoringStateInt": 0
+			},			
+			"LCW" :
+			{
+				"Valid" : ["Global.ValidEnum", 0],
+				"ChangeLanesWarning" : ["Global.OrientationEnum", 0]
+			},
+			"Cruise" :
+			{
+				"LimitSpeedStr" : "",
+				"ASLStateInt" : 0,
+				"CurrSpeedStr" : "",
+				"CCSStateInt" : 0
+			}
+		}
+	},
+	"Radar" :
+	{
+		"FrontRadar0WarnLevel" : ["Global.RadarWarnLevelEnum", 0],
+		"FrontRadar1WarnLevel" : ["Global.RadarWarnLevelEnum", 0],
+		"FrontRadar2WarnLevel" : ["Global.RadarWarnLevelEnum", 0],
+		"FrontRadar3WarnLevel" : ["Global.RadarWarnLevelEnum", 0],
+		"FrontRadar4WarnLevel" : ["Global.RadarWarnLevelEnum", 0],
+		"FrontRadar5WarnLevel" : ["Global.RadarWarnLevelEnum", 0],
+		"RearRadar0WarnLevel" : ["Global.RadarWarnLevelEnum", 0],
+		"RearRadar1WarnLevel" : ["Global.RadarWarnLevelEnum", 0],
+		"RearRadar2WarnLevel" : ["Global.RadarWarnLevelEnum", 0],
+		"RearRadar3WarnLevel" : ["Global.RadarWarnLevelEnum", 0],
+		"RearRadar4WarnLevel" : ["Global.RadarWarnLevelEnum", 0],
+		"RearRadar5WarnLevel" : ["Global.RadarWarnLevelEnum", 0]
+		
+	},
+	"BodyControl" : 
+	{
+		"Scene" : ["Global.SceneEnum", 0],
+		"DrivingRoad" : ["BodyControl.DrivingRoadEnum", 0],
+		"LightThemeInt" : 0,
+		"LightAutoAdjust" : ["Global.MarkEnum", 0],
+		"Suspended" : ["Global.LevelEnum", 0],
+		"AirCondition" : 
+		{
+			"Scene" : ["Global.SceneEnum", 0],
+			"Switch" : ["Global.SwitchEnum", 0],
+			"ACSwitch" : ["Global.SwitchEnum", 0],
+			"WorkMode" : ["BodyControl.ACWorkModeEnum", 0],
+			"AirCirculationMode" : ["BodyControl.AirCirculationEnum", 0],
+			"FrontDefrost" : ["Global.MarkEnum", 0],
+			"RearDefrost" : ["Global.MarkEnum", 0],
+			"FastCoolTime" : 0,
+			"FastCoolDb" : 0,
+			"QuietCoolTime" : 0,
+			"QuietCoolDb" : 0,
+			"OutsideTempStr" : "",
+			"Outlet0" :
+			{
+				"Temp" : 0,
+				"WindSpeed" : ["Global.LevelEnum", 0],
+				"HeadBlowing" : ["Global.MarkEnum", 0],
+				"FeetBlowing" : ["Global.MarkEnum", 0],
+				"WindowBlowing" : ["Global.MarkEnum", 0]
+			},
+			"Outlet1" :
+			{
+				"Temp" : 0,
+				"WindSpeed" : ["Global.LevelEnum", 0],
+				"HeadBlowing" : ["Global.MarkEnum", 0],
+				"FeetBlowing" : ["Global.MarkEnum", 0],
+				"WindowBlowing" : ["Global.MarkEnum", 0]
+			}
+		},
+		"Seat" : 
+		{
+			"Scene" : ["Global.SceneEnum", 0],
+			"Popup" : ["Global.PopupEnum", 0],
+			"CurrentConfigSeat" : 0,
+			"NewConfig" :
+			{
+				"Name" : ""
+			},
+			"Seat0" :
+			{
+				"Belt" : ["Global.ValidEnum", 0],
+				"AirBag" : ["Global.ValidEnum", 0],
+				"Temp" : ["Global.LevelEnum", 0],
+				"WindSpeed" : ["Global.LevelEnum", 0],
+				"FrontBackRange" : 0.0,
+				"CurvatureRange" : 0.0,
+				"ConfigList" : ["BodyControl.SeatConfigItemTemplate"],
+				"ConfigOverflow" : false,
+				"IsEdit" : false
+			},
+			"Seat1" :
+			{
+				"Belt" : ["Global.ValidEnum", 0],
+				"AirBag" : ["Global.ValidEnum", 0],
+				"Temp" : ["Global.LevelEnum", 0],
+				"WindSpeed" : ["Global.LevelEnum", 0],
+				"FrontBackRange" : 0.0,
+				"CurvatureRange" : 0.0,
+				"ConfigList" : ["BodyControl.SeatConfigItemTemplate"],
+				"ConfigOverflow" : false,
+				"IsEdit" : false
+			},
+			"Seat2" :
+			{
+				"Belt" : ["Global.ValidEnum", 0],
+				"Temp" : ["Global.LevelEnum", 0],
+				"WindSpeed" : ["Global.LevelEnum", 0],
+				"FrontBackRange" : 0.0,
+				"CurvatureRange" : 0.0,
+				"ConfigList" : ["BodyControl.SeatConfigItemTemplate"],
+				"ConfigOverflow" : false,
+				"IsEdit" : false
+			},
+			"Seat3" :
+			{
+				"Belt" : ["Global.ValidEnum", 0],
+				"Temp" : ["Global.LevelEnum", 0],
+				"WindSpeed" : ["Global.LevelEnum", 0],
+				"FrontBackRange" : 0.0,
+				"CurvatureRange" : 0.0,
+				"ConfigList" : ["BodyControl.SeatConfigItemTemplate"],
+				"ConfigOverflow" : false,
+				"IsEdit" : false
+			},
+			"Seat4" :
+			{
+				"Belt" : ["Global.ValidEnum", 0],
+				"Temp" : ["Global.LevelEnum", 0],
+				"WindSpeed" : ["Global.LevelEnum", 0],
+				"FrontBackRange" : 0.0,
+				"CurvatureRange" : 0.0,
+				"ConfigList" : ["BodyControl.SeatConfigItemTemplate"],
+				"ConfigOverflow" : false,
+				"IsEdit" : false
+			},
+			"Seat5" :
+			{
+				"Belt" : ["Global.ValidEnum", 0],
+				"Temp" : ["Global.LevelEnum", 0],
+				"WindSpeed" : ["Global.LevelEnum", 0],
+				"FrontBackRange" : 0.0,
+				"CurvatureRange" : 0.0,
+				"ConfigList" : ["BodyControl.SeatConfigItemTemplate"],
+				"ConfigOverflow" : false,
+				"IsEdit" : false
+			},
+			"Seat6" :
+			{
+				"Belt" : ["Global.ValidEnum", 0],
+				"Temp" : ["Global.LevelEnum", 0],
+				"WindSpeed" : ["Global.LevelEnum", 0],
+				"FrontBackRange" : 0.0,
+				"CurvatureRange" : 0.0,
+				"ConfigList" : ["BodyControl.SeatConfigItemTemplate"],
+				"ConfigOverflow" : false,
+				"IsEdit" : false
+			},
+			"AllConfigOverflow" : false
+		},
+		"DoorWindow" :
+		{
+			"Scene" : ["Global.SceneEnum", 0],
+			"DoorWarning" : ["Global.MarkEnum", 0],
+			"Door0Switch" : ["Global.SwitchEnum", 0],
+			"Door1Switch" : ["Global.SwitchEnum", 0],
+			"Door2Switch" : ["Global.SwitchEnum", 0],
+			"Door3Switch" : ["Global.SwitchEnum", 0],
+			"Door0Lock" : ["Global.MarkEnum", 0],
+			"Door1Lock" : ["Global.MarkEnum", 0],
+			"Door2Lock" : ["Global.MarkEnum", 0],
+			"Door3Lock" : ["Global.MarkEnum", 0],
+			"Window0Opening" : ["Global.LevelEnum", 0],
+			"Window1Opening" : ["Global.LevelEnum", 0],
+			"Window2Opening" : ["Global.LevelEnum", 0],
+			"Window3Opening" : ["Global.LevelEnum", 0],
+			"Window4Opening" : ["Global.LevelEnum", 0],
+			"TrunkSwitch" : ["Global.SwitchEnum", 0],
+			"EngineHood" : ["Global.SwitchEnum", 0]
+		}
+	},
+	"Bt" : 
+	{
+		"Switch" : ["Global.SwitchEnum", 0],
+		"Valid" : ["Global.ValidEnum", 0],
+		"Battery" : ["Global.LevelEnum", 0],
+		"PhoneSignal" : ["Global.LevelEnum", 0],
+		"Call" : 
+		{
+			"Valid" : ["Global.ValidEnum", 0],
+			"Privacy" : ["Global.MarkEnum", 0],
+			"CurrentCallingInfo" : 
+			{
+				"Name" : "",
+				"Number" : "",
+				"DurationStr" : "",
+				"Work" : ["Bt.CallWorkEnum", 0]
+			}
+		},
+		"CallRecord" :
+		{
+			"Valid" : ["Global.ValidEnum", 0],
+			"AllList" : [ "Bt.CallRecordItemTemplate"],
+			"MissedList" : ["Bt.CallRecordItemTemplate"],
+			"MissedCount" : 0
+		}
+	},
+	"Radio" :
+	{
+		"ChannelValueStr" : "",
+		"AMFM" : ["Media.ChannelEnum", 0]
+	},
+	"Music" : 
+	{
+		"Play" : ["Global.PlayEnum", 0],
+		"Random" : ["Global.MarkEnum", 0],
+		"Repeat" : ["Global.RepeatEnum", 0],
+		"MediaList" : ["Music.MediaItemTemplate"],
+		"MediaType" : ["Global.MediaTypeEnum", 0],
+		"CurrentMediaInfo" : 
+		{
+			"SongStr" : "",
+			"ArtistStr" : "",
+			"AlbumStr" : "",
+			"PlayDurationStr" : "",
+			"TotalDurationStr" : "",
+			"Picture" : ["Image"],
+			"PlayProgressFloat" : 0.0,
+			"Error" : ["Global.PlayEnum", 0]
+		},
+		"PlayList" :
+		{
+			"CurrFocusItemInt" : 0,
+			"Item0" :
+			{
+			   "FileNameStr" : "",
+			   "IsChecked" : false,
+			   "CurrState" : ["Media.CurrStateEnum", 0]
+			},
+			"Item1" :
+			{
+			   "FileNameStr" : "",
+			   "IsChecked" : false,
+			   "CurrState" : ["Media.CurrStateEnum", 0]
+			},
+			"Item2" :
+			{
+			   "FileNameStr" : "",
+			   "IsChecked" : false,
+			   "CurrState" : ["Media.CurrStateEnum", 0]
+			},
+			"Item3" :
+			{
+			   "FileNameStr" : "",
+			   "IsChecked" : false,
+			   "CurrState" : ["Media.CurrStateEnum", 0]
+			},
+			"Item4" :
+			{
+			   "FileNameStr" : "",
+			   "IsChecked" : false,
+			   "CurrState" : ["Media.CurrStateEnum", 0]
+			},
+			"Item5" :
+			{
+			   "FileNameStr" : "",
+			   "IsChecked" : false,
+			   "CurrState" : ["Media.CurrStateEnum", 0]
+			}
+		}
+	},
+	"Setting" : 
+	{
+		"Language" : ["Global.LanguageEnum", 0],
+		"ThemeInt" : 0,
+		"TempUnit" : ["Setting.TempUnitEnum", 0],
+		"PressureUnit" : ["Setting.PressureUnitEnum", 0],
+		"SpeedUnit" : ["Setting.SpeedUnitEnum", 0],
+		"FuelConsumptionUnit": ["Setting.FuelConsumptionUnitEnum", 0],
+		"MileUnit" : ["Setting.MileUnitEnum", 0],
+		"AMPM" : ["Setting.AMPMEnum", 0],
+		"MenuModuleInt" : 0,
+		"Menu0Int":0,
+		"Menu1Int":0,
+		"Menu2Int":0,
+		"Menu3Int":0,
+		"Menu4Int":0,
+		"Menu5Int":0,
+		"SettingCurrItemInt" : 0,
+		"CurrFocusItemInt" : 0,
+		"PageTurningInt" : 0,
+		"SettingLevel1ItemInt" : 0,
+		"SettingLevel2ItemInt" : 0,
+		"SettingLevel3ItemInt" : 0,
+		"ClearConformList" :
+		{
+			"Item0IsCheckedBool":false,
+			"Item1IsCheckedBool":false,
+			"CurrFocusItemInt" : 0
+		},
+		"ResetConfirmList" :
+		 {
+		   "Item0IsCheckedBool":false,
+		   "Item1IsCheckedBool":false,
+		   "CurrFocusItemInt" : 0
+		 },
+		"EPSStateSettingList" :
+		{	
+			"Item0IsCheckedBool":false,
+			"Item1IsCheckedBool":false,
+			"CurrFocusItemInt" : 0
+		},
+		"ThemeSettingList":
+		{
+			"Item0IsCheckedBool":false,
+			"Item1IsCheckedBool":false,
+			"Item2IsCheckedBool":false,
+			"CurrFocusItemInt" : 0
+		},
+		"LanguageSettingList" :
+		{
+			"Item0IsCheckedBool":false,
+			"Item1IsCheckedBool":false,
+			"CurrFocusItemInt" : 0
+		},
+		"FatigueDrivingTimeSettingList" :
+		{
+			"CurrFocusItemInt" : 0,
+			"IsCloseTipBool": false
+		},
+		"OverSpeedAlarmSettingList" :
+		{
+			"CurrFocusItemInt" : 0,
+			"IsCloseTipBool": false
+		},
+		"SettingMainList" :
+		{
+			"Item0IsCheckedBool":false,
+			"Item1IsCheckedBool":false,
+			"Item2IsCheckedBool":false,
+			"Item3IsCheckedBool":false,
+			"Item4IsCheckedBool":false,
+			"Item5IsCheckedBool":false,
+			"Item6IsCheckedBool":false,
+			"Item7IsCheckedBool":false,
+			"Item8IsCheckedBool":false,
+			"CurrFocusItemInt" : 0,
+			"LocateListInt" : 0
+		},
+		"WarnTextQuiryInt" :
+		{
+			"Item0TextIDInt" : 0,
+			"Item1TextIDInt" : 0,
+			"Item2TextIDInt" : 0,
+			"Item3TextIDInt" : 0,
+			"CurrFocusItemInt" : 0
+		},
+		"DateSettingList" :
+		{
+			"Year" :
+			{
+				"Item0ContentInt" :0,
+				"Item0StateInt" :0,
+				"Item1ContentInt" :0,
+				"Item1StateInt" :0,
+				"Item2ContentInt" :0,
+				"Item2StateInt" :0,
+				"Item3ContentInt" :0,
+				"Item3StateInt" :0,
+				"Item4ContentInt" :0,
+				"Item4StateInt" :0,
+				"CurrFocusItemInt" : 0
+			},
+			"Month" :
+			{
+				"Item0ContentInt" :0,
+				"Item0StateInt" :0,
+				"Item1ContentInt" :0,
+				"Item1StateInt" :0,
+				"Item2ContentInt" :0,
+				"Item2StateInt" :0,
+				"Item3ContentInt" :0,
+				"Item3StateInt" :0,
+				"Item4ContentInt" :0,
+				"Item4StateInt" :0,
+				"CurrFocusItemInt" : 0
+			},
+			"Date" :
+			{
+				"Item0ContentInt" :0,
+				"Item0StateInt" :0,
+				"Item1ContentInt" :0,
+				"Item1StateInt" :0,
+				"Item2ContentInt" :0,
+				"Item2StateInt" :0,
+				"Item3ContentInt" :0,
+				"Item3StateInt" :0,
+				"Item4ContentInt" :0,
+				"Item4StateInt" :0,
+				"CurrFocusItemInt" : 0
+			}
+		},
+		"MediaMainList" :
+		{
+			"Item0IsCheckedBool":false,
+			"Item1IsCheckedBool":false,
+			"CurrFocusItemInt" : 0
+		},
+		"SourceMediaList" :
+		{
+			"Item0IsCheckedBool":false,
+			"Item1IsCheckedBool":false,
+			"Item2IsCheckedBool":false,
+			"Item3IsCheckedBool":false,
+			"Item5IsCheckedBool":false,
+			"Item6IsCheckedBool":false,
+			"CurrFocusItemInt" : 0
+		}
+	},
+	"System" :
+	{
+		"PartNumber" : "",
+		"HardwareVersion" : "",
+		"SoftwareVersion" : "",
+		"CalibrationVersion" : "",
+		"BuildTime" : "",
+		"DTCs" : "",
+		"DayCounter" : 0,
+		"CurrentTimeHourStr" : "",
+		"CurrentTimeMinuteStr" : "",
+		"CurrentTimeSecondInt" : 0,
+		"IGNState" : ["Global.MarkEnum", 0],
+		"TextWarningInt" : 0,
+		"TextWarningQueryCurInt" : 0,
+		"TextWarningQueryTotalInt" : 0,
+		"TextWarningQueryIdx1Int" : 0,
+		"TextWarningQueryIdx2Int" : 0,
+		"TextWarningList" : ["TextWarning.TextWarningItemTemplate"],
+		"ADASTextWarningInt" : 0,
+		"SubModule":["Global.SubModuleEnum", 0],
+		"SubMenuModule1Int":["Global.PageEnum", 0],
+		"SubMenuModule2Int":["Global.PageEnum", 0],
+		"VehicleMenuInt":["Global.PageEnum", 0],
+		"NaviMode" : ["Global.MarkEnum", 0],
+		"FuelTankDirection" : ["Global.OrientationEnum", 0],
+		"Tip1Int": 0,
+		"Tip2Int": 0,
+		"Tip3Int": 0,
+		"Pop_VerifaceInt" : 0,
+		"FactorySettingStateInt" : 0,
+		"Veriface" :
+		{
+			"Step0_Veristate"  : ["Global.VeristateEnum", 0],
+			"Step1_Veristate"  : ["Global.VeristateEnum", 0],
+			"Step2_Veristate"  : ["Global.VeristateEnum", 0],
+			"Step3_Veristate"  : ["Global.VeristateEnum", 0],
+			"Step4_Veristate"  : ["Global.VeristateEnum", 0],
+			"Step0Int" : 0,
+			"Step1Int" : 0,
+			"Step2Int" : 0,
+			"Step3Int" : 0,
+			"Step4Int" : 0
+		},		
+		"Date" :
+		{
+			"YearStr" : "",
+			"MonthStr" : "01",
+			"DayStr" : "01",
+			"WeekInt" : 0
+		}
+	},
+	"Navigation" :
+	{
+		"NaviModeInt" : 0, 
+		"Popup0Int" : 0,
+		"NextStepInt" : 0,
+		"NextDistanceValueStr" : "",
+		"NextPlaceStr" : "",
+		"CurrLaneInt" : 0,
+		"RemainTimeStr" : "",
+		"RemainDistStr" : "",
+		"TrafficCameraDisInt" : 0,
+		"SpeedLimitInt" : 0,
+		"WarningTip1Int" : 0,
+		"WarningTip2Int" : 0,
+		"WarningTip3Int" : 0
+	}
+}
